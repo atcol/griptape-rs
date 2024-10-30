@@ -24,7 +24,7 @@ pub async fn main() {
         "webscraper".to_string(),
     );
     let mut config = Configuration::new();
-    config.bearer_access_token = Some(std::env::var("GRIPTAPE_API_TOKEN").unwrap());
+    config.bearer_access_token = Some(std::env::var("GT_CLOUD_API_KEY").unwrap());
 
     let connector_resp = create_data_connector(&config, req).await;
     println!("Connector = {connector_resp:?}");
