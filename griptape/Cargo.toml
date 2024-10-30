@@ -1,0 +1,16 @@
+[package]
+name = "griptape"
+version = "2023.9.19"
+authors = ["OpenAPI Generator team and contributors"]
+description = "[Unofficial] Client API for Griptape.ai"
+# Override this license by providing a License Object in the OpenAPI.
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+url = "^2.5"
+uuid = { version = "^1.8", features = ["serde", "v4"] }
+reqwest = { version = "^0.12", features = ["json", "multipart"] }
